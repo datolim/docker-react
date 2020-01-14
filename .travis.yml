@@ -4,4 +4,4 @@ services:
 before_install:
     - docker build -t datolim/docker-react -f Dockerfile.dev .
 scripts:
-    - docker run datolim/docker-react npm run test -- --coverage
+    - docker run -e CI=true datolim/docker-react npm run test -- --coverage
