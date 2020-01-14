@@ -34,9 +34,12 @@ docker build .
 docker run -p 8080:80 <id>
 
 CICD setup with github and travis CI :-
-1. Create github new repo docker-react
-   https://github.com/datolim/docker-react.git
+1. Create github new repo docker-react (https://github.com/datolim/docker-react.git). 
+   Init local master repo and push over github
+   
    cd frontend 
    git init
-   git .
-   git commit -m "new repo"
+   git add .
+   git commit -m "init commit"
+   git remote add origin https://github.com/datolim/docker-react.git
+   git push origin master
