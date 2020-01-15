@@ -43,3 +43,7 @@ CICD setup with github and travis CI :-
    git commit -m "init commit"
    git remote add origin https://github.com/datolim/docker-react.git
    git push origin master
+
+
+Git Command :-
+git checkout -b feature in master branch will clone to feature
